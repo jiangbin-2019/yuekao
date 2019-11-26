@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/jiangbin-2019/yuekao.git
           username: jiangbin-2019
           password: jkh19980305
           search-paths: config-repo
