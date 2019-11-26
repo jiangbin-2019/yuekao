@@ -1,0 +1,23 @@
+server:
+  port: 8082
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer1:1111/eureka/
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/yuekao?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: provider-service
+
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
+

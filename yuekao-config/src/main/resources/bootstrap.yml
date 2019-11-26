@@ -1,0 +1,13 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          username: jiangbin-2019
+          password: jkh19980305
+          search-paths: config-repo
